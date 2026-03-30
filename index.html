@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вгости — Искусство гостеприимства</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="page-body">
+    <main class="main-content">
+        <!-- Главный экран (Hero Section) -->
+        <section class="hero-section">
+            <p class="hero-kicker animate-fade-up">Искусство гостеприимства</p>
+            <h1 class="hero-title animate-fade-up delay-100">Три повода для <span class="text-accent">вкусных встреч</span></h1>
+            <p class="hero-subtitle animate-fade-up delay-200">Мы объединили уютное кафе, атмосферную чайную и ваш любимый стритфуд. Выбирайте, где проведете время сегодня.</p>
+            <div class="hero-image-wrapper animate-fade-up delay-300">
+                <img alt="Cafe Interior" class="hero-image" src="/hero-gift.png"/>
+                <div class="hero-overlay"></div>
+                <div class="hero-actions">
+                    <button id="btn-gift" class="btn btn-gift standalone-hero-btn">
+                        <span class="material-symbols-outlined icon">card_giftcard</span>
+                        <span id="btn-gift-text">Скидка 10% на первый заказ</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Наши проекты" -->
+        <section class="projects-section">
+            <h2 class="section-title with-lines">Наши заведения</h2>
+
+            <!-- Карточка 1: Вгости -->
+            <article class="project-card">
+                <div class="card-image-box carousel" id="carousel-vgosti">
+                    <div class="carousel-track">
+                        <img alt="Вгости — интерьер" class="carousel-slide" src="/photo vgosti/1.png"/>
+                        <img alt="Вгости — зал" class="carousel-slide" src="/photo vgosti/2.jpg"/>
+                        <img alt="Вгости — вывеска" class="carousel-slide" src="/photo vgosti/3.jpg"/>
+                        <img alt="Вгости — детали" class="carousel-slide" src="/photo vgosti/4.jpg"/>
+                    </div>
+                    <div class="carousel-dots" id="dots-vgosti">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="pill-badge badge-vgosti">Вгости</div>
+                </div>
+                <div class="card-content">
+                    <img alt="Вгости Logo" class="project-logo" src="/Лого ВГ.png" />
+                    <p class="project-desc">«Вгости» — это уютное кафе европейской кухни с изысканным меню и тёплой атмосферой, где классические блюда дополняются безупречным сервисом.</p>
+                    <div class="project-meta">
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">location_on</span>
+                            <p>ул. Ленинская, 31</p>
+                        </div>
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">schedule</span>
+                            <p>Пн-Пт 8:00-22:00, Сб-Вс 10:00-22:00</p>
+                        </div>
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">call</span>
+                            <p><span class="copyable-phone" data-phone="+7 (984) 142-35-20" title="Нажмите, чтобы скопировать" style="cursor: pointer; text-decoration: underline dashed currentColor; text-underline-offset: 4px;">+7 (984) 142-35-20</span></p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="btn-group">
+                        <button id="btn-menu-vgosti" class="btn btn-secondary">Перейти к меню</button>
+                        <button class="btn btn-primary btn-maps" data-lat="44.596997" data-lng="132.815231" data-query="Спасск-Дальний, Ленинская, 27а">
+                            <span class="material-symbols-outlined icon">directions</span>
+                            Как добраться
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Карточка 2: Вкусные Истории -->
+            <article class="project-card">
+                <div class="card-image-box carousel" id="carousel-vi">
+                    <div class="carousel-track">
+                        <img alt="Вкусные истории — зал" class="carousel-slide" src="/VI/1.jpg"/>
+                        <img alt="Вкусные истории — интерьер" class="carousel-slide" src="/VI/2.jpg"/>
+                        <img alt="Вкусные истории — атмосфера" class="carousel-slide" src="/VI/3.jpg"/>
+                        <img alt="Вкусные истории — фасад" class="carousel-slide" src="/VI/4.png"/>
+                    </div>
+                    <div class="carousel-dots" id="dots-vi">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="pill-badge badge-vi">Вкусные Истории</div>
+                </div>
+                <div class="card-content">
+                    <img alt="Вкусные истории Logo" class="project-logo logo-tall" src="/vi.png" />
+                    <p class="project-desc">«Вкусные истории» — это уютное кафе с разнообразным мировым фастфудом и видом на площадь, идеально подходящее для отдыха всей семьей.</p>
+                    <div class="project-meta">
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">location_on</span>
+                            <p>ул. Ленинская, 25 (2 этаж)</p>
+                        </div>
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">schedule</span>
+                            <p>Пн-Пт 8:00-20:00, Сб-Вс 10:00-20:00</p>
+                        </div>
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">call</span>
+                            <p><span class="copyable-phone" data-phone="+7 (924) 424-05-17" title="Нажмите, чтобы скопировать" style="cursor: pointer; text-decoration: underline dashed currentColor; text-underline-offset: 4px;">+7 (924) 424-05-17</span></p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn-menu-vi" class="btn btn-secondary">Перейти к меню</button>
+                        <button class="btn btn-primary btn-maps" data-lat="44.597686" data-lng="132.815951" data-query="Спасск-Дальний, Ленинская, 25">
+                            <span class="material-symbols-outlined icon">directions</span>
+                            Как добраться
+                        </button>
+                        <button id="btn-download-vi" class="btn btn-primary">
+                            <span class="material-symbols-outlined icon">download_for_offline</span>
+                            Скачать приложение
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Карточка 3: Встречай -->
+            <article class="project-card">
+                <div class="card-image-box carousel" id="carousel-vstrechai">
+                    <div class="carousel-track">
+                        <img alt="Встречай — зал" class="carousel-slide" src="/Vstrechai/1.png"/>
+                        <img alt="Встречай — интерьер" class="carousel-slide" src="/Vstrechai/2.jpg"/>
+                        <img alt="Встречай — атмосфера" class="carousel-slide" src="/Vstrechai/3.jpg"/>
+                        <img alt="Встречай — фасад" class="carousel-slide" src="/Vstrechai/4.png"/>
+                    </div>
+                    <div class="carousel-dots" id="dots-vstrechai">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="pill-badge badge-vstrechai">Встречай</div>
+                </div>
+                <div class="card-content">
+                    <img alt="Встречай Logo" class="project-logo logo-tall" src="/logo-vstrechai-new.jpg" />
+                    <p class="project-desc">«Встречай» — это гостеприимная чайная с авторскими коллекциями чая, ароматным кофе и изысканными десертами для душевных моментов.</p>
+                    <div class="project-meta">
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">location_on</span>
+                            <p>ул. Ленинская, 25</p>
+                        </div>
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">schedule</span>
+                            <p>Ежедневно 10:00-22:00</p>
+                        </div>
+                        <div class="meta-row">
+                            <span class="material-symbols-outlined icon">call</span>
+                            <p><span class="copyable-phone" data-phone="+7 (914) 335-90-59" title="Нажмите, чтобы скопировать" style="cursor: pointer; text-decoration: underline dashed currentColor; text-underline-offset: 4px;">+7 (914) 335-90-59</span></p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn-menu-vstrechai" class="btn btn-secondary">Перейти к меню</button>
+                        <button class="btn btn-primary btn-maps" data-lat="44.597686" data-lng="132.815951" data-query="Спасск-Дальний, Ленинская, 25">
+                            <span class="material-symbols-outlined icon">directions</span>
+                            Как добраться
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <!-- Общий блок отзывов внизу -->
+        <section class="global-reviews-section">
+            <h2 class="section-title">Что о нас говорят</h2>
+            <div class="global-reviews-grid">
+                <div class="global-review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Очень вкусная еда как дома, персонал доброжелательный хороший. Всегда ходим во "Вкусные истории", внутри очень уютно, комфортно, красиво, атмосферно. Кафе хорошее.»</p>
+                    <span class="review-author">— Анна Игнаткова (Яндекс.Карты)</span>
+                </div>
+                <div class="global-review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Приходя в это место я точно знаю, что меня ждут дружелюбные официанты, приветливые администраторы и восхитительные бармены. У поваров однозначно золотые руки. Однозначно стоит посетить это место!»</p>
+                    <span class="review-author">— Жабонька (Яндекс.Карты)</span>
+                </div>
+                <div class="global-review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Встречай — настоящая находка! Авторский чай просто потрясающий, десерты тают во рту. Спасибо за вашу атмосферу!»</p>
+                    <span class="review-author">— Гость (Яндекс.Карты)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Юридический подвал (Footer) -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-legal">
+                <p>&copy; 2026 Сеть заведений «Вгости», «Вкусные Истории», «Встречай». Все права защищены.</p>
+                <p>ИП Кобзярь Я.Л. | ИНН 251009313656</p>
+                <div class="footer-disclaimers">
+                    <p>Информация на сайте носит исключительно ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
+                    <p>Подробные условия проведения акций, сроки и порядок их получения уточняйте у администраторов заведений.</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для меню -->
+    <div id="menu-modal" class="modal-overlay">
+        <button id="modal-close-btn" class="modal-close" aria-label="Закрыть меню">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="modal-content-wrapper">
+            <!-- Меняем src динамически. Изначально картинка скрыта -->
+            <img src="" alt="Меню заведения" class="modal-image loading" id="modal-menu-image">
+        </div>
+    </div>
+
+    <!-- Модальное окно для выбора карт -->
+    <div id="maps-modal" class="modal-overlay">
+        <button id="maps-close-btn" class="modal-close" aria-label="Закрыть выбор карт">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="modal-maps-content">
+            <h3 class="maps-title">Открыть маршрут в...</h3>
+            <div class="maps-options">
+                <a href="#" target="_blank" class="map-option" id="link-yandex">
+                    <svg class="map-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C7.58 2 4 5.58 4 10C4 16 12 22 12 22C12 22 20 16 20 10C20 5.58 16.42 2 12 2Z" fill="#F0182A" /><circle cx="12" cy="10" r="4" fill="white" /></svg>
+                    <span class="map-text">Яндекс.Карты</span>
+                </a>
+                <a href="#" target="_blank" class="map-option" id="link-2gis">
+                    <svg class="map-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 7.5L12 2L21.5 7.5V16.5L12 22L2.5 16.5V7.5Z" fill="#A2D61C" /><path d="M12 12L2.5 16.5L12 22L21.5 16.5L12 12Z" fill="#75B000" /><path d="M12 2L2.5 7.5L12 13L21.5 7.5L12 2Z" fill="#C9F944" /></svg>
+                    <span class="map-text">2ГИС</span>
+                </a>
+                <a href="#" target="_blank" class="map-option" id="link-google">
+                    <svg class="map-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.1 2.3A9.9 9.9 0 0012 1a9.9 9.9 0 00-6.7 2.6L12 11.2l4.1-8.9z" fill="#EA4335"/><path d="M3.3 6.6A10 10 0 002 11.7c0 2 .5 3.9 1.6 5.5l8.4-5.9-8.7-4.7z" fill="#FBBC05"/><path d="M2 11.7c0 .8.1 1.6.3 2.3A10 10 0 004 18.2l8-5.7-10 1.2z" fill="#34A853"/><path d="M12 12.5v10.4c4.1-1.6 7-5.5 7-10 0-.6-.1-1.3-.2-1.9L12 12.5z" fill="#4285F4"/></svg>
+                    <span class="map-text">Google Maps</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно промокода -->
+    <div id="promo-modal" class="modal-overlay">
+        <button id="promo-close-btn" class="modal-close" aria-label="Закрыть">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="modal-maps-content promo-modal-content">
+            <div class="promo-gift-icon">🎁</div>
+            <h3 class="maps-title">Ваш подарок</h3>
+            <p class="promo-subtitle">Скидка 10% на первый заказ</p>
+            <div class="scarcity-badge dark"><span class="pulse-dot"></span> Осталось: 50 активаций</div>
+            <div class="promo-code-display">
+                <span id="promo-code-text">ВКУСНО10</span>
+            </div>
+            <button id="btn-copy-promo" class="btn btn-secondary btn-copy">
+                <span class="material-symbols-outlined icon">content_copy</span>
+                <span id="btn-copy-text">Скопировать код</span>
+            </button>
+            <p class="promo-hint">Назовите код на кассе или введите в приложении</p>
+        </div>
+    </div>
+
+    <!-- Модальное окно для выбора платформы скачивания приложения -->
+    <div id="download-modal" class="modal-overlay">
+        <button id="download-close-btn" class="modal-close" aria-label="Закрыть окно">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="modal-maps-content">
+            <h3 class="maps-title">Скачать приложение</h3>
+            <div class="download-bonus-hint">
+                <span class="material-symbols-outlined hint-icon">loyalty</span>
+                <span>По промокоду <strong>ИСТОРИИ20</strong> — 20% бонусов от первого заказа</span>
+            </div>
+            <div class="scarcity-badge dark" style="margin-top: -0.5rem;"><span class="pulse-dot"></span> Осталось 50 промокодов</div>
+            <div class="maps-options">
+                <a href="https://apps.apple.com/app/id6755599971" target="_blank" class="map-option download-link">
+                    <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span class="map-text">App Store</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=ru.saby.clients.brand.kafevkusnieistorii" target="_blank" class="map-option download-link">
+                    <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l-2.79-2.6 2.79-2.6 3.14 1.76c.89.5.89 1.78 0 2.28l-3.14 1.16zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+                    <span class="map-text">Google Play</span>
+                </a>
+            </div>
+            <p class="promo-hint">Промокод скопируется автоматически</p>
+        </div>
+    </div>
+
+    <!-- Toast уведомление -->
+    <div id="toast" class="toast" aria-live="polite">
+        <span class="material-symbols-outlined toast-icon">check_circle</span>
+        <span id="toast-text">Промокод скопирован</span>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
